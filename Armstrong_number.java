@@ -15,7 +15,7 @@ public class Armstrong_number {
         while(num>0)
         {
         	rem=num%10;
-        	arm += Math.pow(rem,3);
+        	arm=(rem*rem*rem)+arm;
         	num=num/10;
         }
         if(arm == c) {
